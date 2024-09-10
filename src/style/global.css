@@ -1,0 +1,41 @@
+/* styles/global.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f4ff;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4ff;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+a {
+  color: #0066ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+}
