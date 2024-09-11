@@ -21,8 +21,6 @@ const RequestLogs = () => {
       const startTime = new Date(startDate).toISOString();
       const endTime = new Date(endDate).toISOString();
 
-      console.log(isNaN(Date.parse(startTime)));
-
       return { startTime, endTime };
     } else {
       const currentTime = new Date(); // Get current time
