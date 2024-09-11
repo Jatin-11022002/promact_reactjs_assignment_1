@@ -3,6 +3,7 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Chat from "./pages/Chat";
 import Logs from "./pages/Logs";
+import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
   return (
@@ -10,8 +11,10 @@ function App() {
       <Routes>
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/chat" element={<Chat />} />
-        <Route path="/logs" element={<Logs />} />
+        <Route element={<PrivateRoute />}>
+          <Route path="/chat" element={<Chat />} />
+          <Route path="/logs" element={<Logs />} />
+        </Route>
       </Routes>
     </Router>
   );
